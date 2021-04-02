@@ -10,35 +10,24 @@ namespace GB_ChallengeThree_Repo
     public class Badge
     {
         public int BadgeID { get; set; }
-        public string DoorName { get; set; }
-        public string DoorNameTwo { get; set; }
-        public string DoorNameThree { get; set; }
-        public string DoorNameFour { get; set; }
+        public List<string> listOfDoors = new List<string>();
+        public string ListOfDoors;
+        
 
 
 
         public Badge() { }
 
-        public Badge(int badgeID, string doorName, string doorNameTwo, string doorNameThree, string doorNameFour) 
+        public Badge(int badgeID, string listOfDoors) 
         {
             BadgeID = badgeID;
-            DoorName = doorName;
-            DoorNameTwo = doorNameTwo;
-            DoorNameThree = doorNameThree;
-            DoorNameFour = doorNameFour;
+            ListOfDoors = listOfDoors;
+            
 
         }
 
-        public static Dictionary<int, Badge> GetBadges()
-        {
-            var badges = new Dictionary<int, Badge>();
-            var theBadge = new Badge("A1", "A4", "B1", "B2");
-            badges.Add(22345, theBadge);
-            theBadge = new Badge("A4", "A5");
-            badges.Add(32345, theBadge);
-
-            return badges;
-        }
+        
+        
 
     }
 }

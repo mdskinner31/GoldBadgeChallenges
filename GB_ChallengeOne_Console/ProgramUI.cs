@@ -177,8 +177,6 @@ namespace GB_ChallengeOne_Console
 
             Console.WriteLine("This is where you add to the menu.");
 
-
-
             Console.WriteLine("Please enter a Meal Name:");
             menu.MealName = Console.ReadLine();
 

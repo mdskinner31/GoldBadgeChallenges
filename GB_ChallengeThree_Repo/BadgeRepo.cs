@@ -10,11 +10,12 @@ namespace GB_ChallengeThree_Repo
     {
         public List<Badge> _listOfBadges = new List<Badge>();
         Dictionary<int, string> bid = new Dictionary<int, string>();
+       // Dictionary<int, string> bid = new Dictionary<int, string>();
         //Create
         public void AddDoorAccess(Badge badge)
         {
             _listOfBadges.Add(badge);
-             bid.Add( badge.BadgeID, badge.DoorName);
+            // bid.Add( badge.BadgeID, badge.ListOfDoors);
         }
 
         //Read
@@ -22,6 +23,8 @@ namespace GB_ChallengeThree_Repo
         {
             return _listOfBadges;
         }
+        
+ 
 
         //Update
         public bool UpdateBadgeAccess(int originalBadgeID, Badge newBadge)
@@ -31,7 +34,7 @@ namespace GB_ChallengeThree_Repo
             if (oldBadge != null)
             {
                 oldBadge.BadgeID = newBadge.BadgeID;
-                oldBadge.DoorName = newBadge.DoorName;
+                oldBadge.ListOfDoors = newBadge.ListOfDoors;
 
                 return true;
 
@@ -84,7 +87,7 @@ namespace GB_ChallengeThree_Repo
         }
         public void CreateDictionary()
         {
-            Dictionary<int,string> bid = new Dictionary<int, string>();
+            Dictionary<int, string> bid = new Dictionary<int, string>();
 
            
 
@@ -95,29 +98,18 @@ namespace GB_ChallengeThree_Repo
             bid.Add(22345, "B2");
             bid.Add(32345, "A4");
             bid.Add(32345, "A5");
-              Console.WriteLine("Badge List");
 
-               foreach (KeyValuePair<string, int> badge in bid)
+          //  bid.Add(12345, _listOfBadges);
+            
+            Console.WriteLine("Badge List");
+            
+               foreach (KeyValuePair<int, string> badge in bid)
                {
                    Console.WriteLine($"Badge ID: {0}, Door Access: {1}", badge.Key, badge.Value); 
               }
         }
 
-        //  public static Dictionary<string, int> DoorAccess()
-        //  {
-        //    
-        //
-        //     }
-
-        public static Dictionary<int, Badge> GetBadges()
-        {
-            var badges = new Dictionary<int, Badge>();
-            var theBadge = new Badge("A1", "A4", "B1", "B2");
-            badges.Add(22345, theBadge);
-            theBadge = new Badge("A4", "A5");
-            badges.Add(32345, theBadge);
-
-            return badges;
-        }
+       
+        
     }
 }

@@ -12,3 +12,5 @@ C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_Chall
 C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_ChallengeOne_Console\GB_ChallengeThree_Tests\obj\Debug\GB_ChallengeThree_Tests.csproj.CopyComplete
 C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_ChallengeOne_Console\GB_ChallengeThree_Tests\obj\Debug\GB_ChallengeThree_Tests.dll
 C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_ChallengeOne_Console\GB_ChallengeThree_Tests\obj\Debug\GB_ChallengeThree_Tests.pdb
+C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_ChallengeOne_Console\GB_ChallengeThree_Tests\bin\Debug\GB_ChallengeThree_Repo.dll
+C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_ChallengeOne_Console\GB_ChallengeThree_Tests\bin\Debug\GB_ChallengeThree_Repo.pdb

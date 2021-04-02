@@ -14,7 +14,7 @@ namespace GBChallengeThree_Console
         public void RunChallenge()
         {
             
-          // SeedBadgeItems();
+          SeedBadgeItems();
             RunBadgeMenu();
         }
 
@@ -32,8 +32,8 @@ namespace GBChallengeThree_Console
                     "1: Add a new badge\n" +
                     "2: See All Badges and Door Access\n" +
                     "3: Update a badge\n" +
-                    //  "4: Delete all door access from a badge.\n" +
-                    "4: Exit");
+                    "4: Delete all door access from a badge.\n" +
+                    "5: Exit");
 
                 string input = Console.ReadLine();
 
@@ -51,12 +51,13 @@ namespace GBChallengeThree_Console
                         UpdateBadge();
                         break;
                     case "4":
-
-
+                        DeleteAllAccessFromBadge();
+                        break;
+                    case "5":
                         running = false;
                         break;
                     default:
-                        Console.WriteLine("Please enter a number between 1 and 4.\n" +
+                        Console.WriteLine("Please enter a number between 1 and 5.\n" +
                             "Press any key to continue...");
                         Console.ReadKey();
                         break;
@@ -73,7 +74,7 @@ namespace GBChallengeThree_Console
             badge.BadgeID = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Which Door(s) does badge access?");
-            badge.DoorName= Console.ReadLine();
+            badge.ListOfDoors= Console.ReadLine();
 
             Console.WriteLine("Any other doors (y/n) ?");
             string repeat = Console.ReadLine();
@@ -81,7 +82,7 @@ namespace GBChallengeThree_Console
             if (repeat == "Y")
             {
                 Console.WriteLine("Which Door(s) does badge access?");
-                badge.DoorName = Console.ReadLine();
+                badge.ListOfDoors = Console.ReadLine();
 
             }
             else if (repeat == "N")
@@ -107,6 +108,9 @@ namespace GBChallengeThree_Console
             Console.WriteLine("Press any key to continue,,,");
             Console.ReadKey();
         }
+
+        
+
         private void BadgeAccessList()
         {
            Dictionary<string, int> bid = new Dictionary<string,int >();
@@ -123,6 +127,27 @@ namespace GBChallengeThree_Console
             Console.WriteLine("Press any key to continue,,,");
             Console.ReadKey();
 
+        }
+
+        private void DeleteAllAccessFromBadge()
+        {
+            Console.Clear();
+            ListBadge();
+            Console.WriteLine("Which badge would you like to delete all door access?");
+            
+            Console.WriteLine("Please enter a Badge ID:");
+            int badgeID = int.Parse(Console.ReadLine());
+            Badge badge = _badgeRepo.GetBadgeById(badgeID);
+            if (badge != null)
+            {
+                DisplayBadge(badge);
+                
+            }
+            else
+            {
+                Console.WriteLine("Invalid Badge ID.");
+            }
+            
         }
         private void UpdateBadge()
         {
@@ -144,7 +169,7 @@ namespace GBChallengeThree_Console
             newBadge.BadgeID = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Which Door(s) does badge access?");
-            newBadge.DoorName = Console.ReadLine();
+            newBadge.ListOfDoors = Console.ReadLine();
 
             Console.WriteLine("Any other doors (y/n) ?");
             string repeat = Console.ReadLine();
@@ -152,7 +177,7 @@ namespace GBChallengeThree_Console
             if (repeat == "Y")
             {
                 Console.WriteLine("Which Door(s) does badge access?");
-                newBadge.DoorName = Console.ReadLine();
+                newBadge.ListOfDoors = Console.ReadLine();
 
             }
             else if (repeat == "N")
@@ -163,7 +188,7 @@ namespace GBChallengeThree_Console
             {
             }
 
-         //   Console.WriteLine($"{badge.BadgeID} has access to door(s) {badge.DoorID}");
+          // Console.WriteLine($"{badge.BadgeID} has access to door(s) {badge.ListOfDoors}");
          //   Console.WriteLine("What would you like to do?\n" +
          //       "1. Remove a door\n" +
          //       "2. Add a door");
@@ -184,13 +209,14 @@ namespace GBChallengeThree_Console
         private void DisplayBadge(Badge badge) 
         {
             Console.WriteLine($"Badge ID: {badge.BadgeID}\n" +
-                $"Door ID: {badge.DoorName}");
+                $"Door ID: {badge.ListOfDoors}");
         
         }
 
         private void GetBadgeById()
         {
             Console.Clear();
+            ListBadge();
             Console.WriteLine("Please enter a Badge ID:");
             int badgeID = int.Parse(Console.ReadLine());
             Badge badge = _badgeRepo.GetBadgeById(badgeID);
@@ -210,7 +236,7 @@ namespace GBChallengeThree_Console
         {
             Badge one = new Badge(12345,"A7");
             Badge two = new Badge(22345,"A1");
-            Badge three = new Badge(32345,"A4");
+            Badge three = new Badge(32345, "Where Do Lists Go?");
 
             _badgeRepo.AddDoorAccess(one);
             _badgeRepo.AddDoorAccess(two);
