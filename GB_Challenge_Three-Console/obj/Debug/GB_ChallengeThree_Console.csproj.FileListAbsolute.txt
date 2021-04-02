@@ -1,0 +1,7 @@
+C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_ChallengeOne_Console\GB_Challenge_Three-Console\bin\Debug\GB_Challenge_Three-Console.exe.config
+C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_ChallengeOne_Console\GB_Challenge_Three-Console\bin\Debug\GB_Challenge_Three-Console.exe
+C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_ChallengeOne_Console\GB_Challenge_Three-Console\bin\Debug\GB_Challenge_Three-Console.pdb
+C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_ChallengeOne_Console\GB_Challenge_Three-Console\obj\Debug\GB_ChallengeThree_Console.csprojAssemblyReference.cache
+C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_ChallengeOne_Console\GB_Challenge_Three-Console\obj\Debug\GB_ChallengeThree_Console.csproj.CoreCompileInputs.cache
+C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_ChallengeOne_Console\GB_Challenge_Three-Console\obj\Debug\GB_Challenge_Three-Console.exe
+C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_ChallengeOne_Console\GB_Challenge_Three-Console\obj\Debug\GB_Challenge_Three-Console.pdb

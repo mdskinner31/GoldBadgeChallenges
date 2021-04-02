@@ -1,0 +1,6 @@
+C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_ChallengeOne_Console\GB_ChallengeThree_Repo\bin\Debug\GB_ChallengeThree_Repo.dll
+C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_ChallengeOne_Console\GB_ChallengeThree_Repo\bin\Debug\GB_ChallengeThree_Repo.pdb
+C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_ChallengeOne_Console\GB_ChallengeThree_Repo\obj\Debug\GB_ChallengeThree_Repo.csprojAssemblyReference.cache
+C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_ChallengeOne_Console\GB_ChallengeThree_Repo\obj\Debug\GB_ChallengeThree_Repo.csproj.CoreCompileInputs.cache
+C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_ChallengeOne_Console\GB_ChallengeThree_Repo\obj\Debug\GB_ChallengeThree_Repo.dll
+C:\Users\mdski\OneDrive\Desktop\ElevenFiftyProjects\GoldBadgeChallenges\GB_ChallengeOne_Console\GB_ChallengeThree_Repo\obj\Debug\GB_ChallengeThree_Repo.pdb
